@@ -1,2 +1,2 @@
 # letsupgrade-javascript
-Notes and Assignment solutionsfor the LetsUpgrade JavaScript Essentials Course
+Notes and assignment solutions for the LetsUpgrade JavaScript Essentials Course
