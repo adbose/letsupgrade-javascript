@@ -3,19 +3,31 @@
 <!--https://developer.mozilla.org/en-US/docs/Web/API/Document/write-->
 <html>
     <head>
-        <title>Document Write</title>
+        <title>Toggle Display</title>
+        <style>
+            #myDiv {
+              width: 50%;
+              padding: 20px 20px;
+              text-align: left;
+              background-color: #d3741c;
+            }
+        </style>
         <script>
-            function newContent() {
-                document.open();
-                document.write("<h1>Out with the old - in with the new!</h1>");
-                document.close();
+            function toggleDisplay() {
+                var x = document.getElementById("myDiv");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
             }
         </script>
     </head>
 
     <body>
-        <h1>Some original document content.</h1>
-        <p>Click on the button below to rewrite the page</p>
-        <button onclick="newContent();">Click Me</button>
+        <h1>Toggle content display</h1>
+        <button onclick="toggleDisplay();">Click Me</button>
+        <h2 id="myDiv">Click on the button above to toggle between hiding and showing this banner</h2>
+        
     </body>
 </html>

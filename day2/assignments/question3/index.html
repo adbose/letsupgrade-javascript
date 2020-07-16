@@ -10,8 +10,12 @@
         <h1>Logging Prompt input on the console</h1>
         <p>Check the console for the prompt input</p>
         <script>
-            let input = prompt("Enter a valid string in the box below:");
-            console.log(input);
+            let input = confirm("Are you at least 21 years old?");
+            if (input == true) {
+                console.log("Can drink");
+            } else {
+                console.log("Cannot drink");
+            }
         </script>
     </body>
 </html>
