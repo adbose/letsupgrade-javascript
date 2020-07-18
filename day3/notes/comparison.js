@@ -31,3 +31,12 @@ console.log(Number(undefined));  // should output NaN
 console.log("abce">"abd");  // false
 console.log("abce">"abcd");  // true
 
+// if else
+marks = 5;
+const grade =
+  marks >= 75
+    ? "A"
+    : marks >= 50
+    ? "B"
+    : "C"
+console.log(grade); // What's up?
