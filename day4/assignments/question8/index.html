@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Arrow Functions</title>
+    </head>
+    <body>
+        <h1>Arrow Fuctions</h1>
+        <script>
+            const ask = (question, yes, no) => {
+                if (confirm(question)) yes();
+                else no();
+            }
+            ask(
+                "Do you agree?",
+                () => { alert("You agreed"); },
+                () => { alert("You declined"); }
+            )
+        </script>
+    </body>
+</html>
