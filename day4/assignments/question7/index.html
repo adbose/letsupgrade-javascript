@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Find Primes</title>
+    </head>
+    <body>
+        <h1>Find Primes</h1>
+        <script>
+            let limit = prompt("Enter upper limit to find primes:");
+            var isPrime = function(input) {
+                factors = 0;
+                for (i=2;i<=input;i++) {
+                    if (input%i == 0) {
+                        factors++;
+                    }
+                }
+                if (factors == 2) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            for (i=2;i<=limit;i++) {
+                prime = isPrime(i);
+                if (prime == true) {
+                    console.log(i);
+                }
+            }
+        </script>
+    </body>
+</html>

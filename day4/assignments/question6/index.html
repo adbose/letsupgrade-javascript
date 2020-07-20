@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sales Commission</title>
+    </head>
+    <body>
+        <h1>Sales Commission</h1>
+        <script>
+            let sales = prompt("Enter sales amount made by Employee:");
+            const commission =
+            sales >= 0 && sales <= 5000
+            ? 0.02*sales
+            : sales > 5000 && sales <= 10000
+            ? 0.05*sales
+            : sales > 10000 && sales <= 20000
+            ? 0.07*sales
+            : 0.1*sales
+            console.log(`The total commission earned is ${commission}`);
+
+            while (true) {
+                let num = prompt("Enter your number ");
+                if (num >= 100) {
+                    console.log(`You entered ${num}`);
+                    break;
+                } else {
+                    alert("Enter a number greater that 100");
+                    continue;
+                }
+            }
+        </script>
+    </body>
+</html>

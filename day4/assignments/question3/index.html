@@ -1,31 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grading</title>
-</head>
-<body>
-    <h1>Showing the Grade for the entered marks</h1>
-    <script>
-        let marks = prompt("Enter your marks in the box below:");
-        console.log(typeof marks);
-        // if (input >= 75) {
-        //     grade = "A"
-        // } else if (input >= 50 && input < 75) {
-        //     grade = "B"
-        // }
-        // else if (input < 50) {
-        //     grade = "C"
-        // }
-        const grade =
-        marks >= 75
-            ? "A"
-            : marks >= 50
-            ? "B"
-            : "C"
-        console.log(grade); // What's up?
-        console.log(`Marks are ${marks} and grade is ${grade}`);
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Shopping Basket</title>
+    </head>
+    <body>
+        <h1>Shopping Basket</h1>
+        <p>Destructuring is the process of extracting values from an object and put them in individual variables</p>
+        <script>
+            const shoppingList = ["pen", "pineapple"]
+            let shoppingCart = shoppingList
+            shoppingCart.push("apple")
+            console.log(shoppingCart);
+        </script>
+    </body>
 </html>

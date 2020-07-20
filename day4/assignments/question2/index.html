@@ -4,15 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Diplay OS specs</title>
+        <title>Destructuring Objects</title>
     </head>
     <body>
-        <h1>Getting the OS name and version</h1>
+        <h1>Destructuring Objects</h1>
+        <p>Destructuring is the process of extracting values from an object and put them in individual variables</p>
         <script>
-            let input = prompt("Enter your OS name and version in the box below separated by space:");
-            inputArray = input.split(" ");
-            console.log(inputArray);
-            console.log(`The OS name is ${inputArray[0]} and the version is ${inputArray[inputArray.length -1]}`);
+            const student = {
+                name: "Helsinki",
+                age: 24,
+                projects: {
+                    diceGame: "Two player dice game using JavaScript"
+                }
+            }
+            let {name, age, projects} = student;
+            console.log(`The student ${name} is ${age} years old. His project is called ${projects.diceGame}`);
         </script>
     </body>
 </html>

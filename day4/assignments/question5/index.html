@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sales Commission</title>
+    </head>
+    <body>
+        <h1>Sales Commission</h1>
+        <script>
+            let sales = prompt("Enter sales amount made by Employee:");
+            if (sales >=0 && sales <= 5000) {
+                commission = 0.02 * sales;
+            } else if (sales > 5000 && sales <= 10000) {
+                commission = 0.05 * sales;
+            } else if (sales > 10000 && sales <= 20000) {
+                commission = 0.07 * sales;
+            } else if (sales > 20000) {
+                commission = 0.1 * sales;
+            }
+            console.log(`The total commission earned is ${commission}`);
+        </script>
+    </body>
+</html>
