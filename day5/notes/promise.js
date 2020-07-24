@@ -1,5 +1,7 @@
 console.log("Promises");
 
+// 
+
 let users = [
     {
         name: 'Berlin',
@@ -69,3 +71,26 @@ const userData = new Promise((resolve, reject)=>{
 userData
 .then(data=>console.log(data))
 .catch(error=>console.log(error))
+
+
+// example three
+// a simple ride hailing example
+// creating a promise
+const ride = new Promise((resolve, reject) => {  // callback function that resolves or rejects the promise
+    arrived = false;
+    if (arrived) {
+        resolve('Driver arrived');
+    } else {
+        reject('Driver cancelled');
+    }
+});
+
+ride
+    .then(value => {
+        console.log(value);
+        // Driver arrived
+    })
+    .catch(error => {
+        console.log(error);
+        // Driver cancelled
+    })
