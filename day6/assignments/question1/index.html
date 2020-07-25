@@ -4,18 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Higher Order Function</title>
-    </head>
-    <body>
-        <h1>Higher Order Forces</h1>
-        <script>
-            let input = prompt("Enter a positive number:");
-            var arr = Array.from(Array(input).keys());
-            //=> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,... <input-1>]
-            let odd = arr.filter(el=>el%2!=0);
-            console.log(odd)
-            let oddCubes = odd.map((el)=>el**3);
-            console.log(oddCubes);
+        <script src="styles.js">
         </script>
+        <title>DOM</title>
+    </head>
+    <body onload="setBackground()">
+        <h1>DOM</h1>
     </body>
 </html>
