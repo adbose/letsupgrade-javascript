@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
 </head>
-<body>
-    <h1>Promises, async, fetch</h1>
-    <script>
-    </script>
+<script defer src="scripts.js"></script>
+<body  onload=display_ct();>
+
+<h2 id="greeting">Welcome</h2>
+<p id="clock">JavaScript Clock</p>
+
+<button onclick="toggleDarkMode()">Toggle dark mode</button>
+
+<script>
+function toggleDarkMode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
 </body>
 </html>

@@ -1,14 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>OOP</title>
-    </head>
-    <body>
-        <h1>OOP</h1>
-        <script src="user.js">
-        </script>
-    </body>
+<html>
+<head>
+<style>
+body {
+    background: #F4F4F4;
+    font-family: Arial;
+    margin: 0;
+}
+</style>
+</head>
+<body>
+<table border="0" style="margin: 0 auto; width:500px">
+    <tr>
+        <td colspan="2"><h2>Multiplication Table</h2></td>
+    </tr>
+ 
+    <tr>
+        <td width="28%">Enter a Number : </td>
+        <td><input type="number" onchange="printTable(this)"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><span id="mul"></span></td>
+    </tr>
+</table>
+ 
+<script>
+function printTable(num) {
+    var input = num.value;
+    if(!isNaN(input)) {
+        var table="";
+        var number="";
+        for(i=1;i<=10;i++) {
+            number = input * i;
+            table +=  input + " * " + i + " = " + number + "<br/>";
+        }
+        document.getElementById("mul").innerHTML = table;
+    }
+    else {
+        document.getElementById("mul").innerHTML = "Please Enter a valid Number";
+    }
+}
+</script>
+</body>
 </html>
